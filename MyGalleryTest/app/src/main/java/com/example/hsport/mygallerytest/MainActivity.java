@@ -115,7 +115,7 @@ public class MainActivity extends Activity {
         @Override
         protected Void doInBackground(Void... params) {
 try{
-    String hostName = "205.178.20.186";
+    String hostName = "ip here";
     int portNumber = 3003;
 
 
