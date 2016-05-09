@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:baselineAligned="false">
 
     <ImageView
         android:id="@+id/imgView"
@@ -11,6 +12,15 @@
         android:layout_weight="1" >
     </ImageView>
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.15"
+        android:singleLine="false"
+        android:hint="Please Enter Plate Number" />
+
     <Button
         android:id="@+id/buttonLoadPicture"
         android:layout_width="fill_parent"
@@ -18,7 +28,17 @@
         android:layout_gravity="center"
         android:layout_weight="0"
         android:onClick="loadImagefromGallery"
+        android:layout_margin="10dp"
         android:text="Load Picture" >
     </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Picture"
+        android:id="@+id/button02"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_weight="0.05" />
 
 </LinearLayout>
